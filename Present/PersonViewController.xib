@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fa41c804d7a9c732d760c3209d7f47eb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="40R-dY-Kbj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profle.png" translatesAutoresizingMaskIntoConstraints="NO" id="PaW-Wq-QMt">
+                    <rect key="frame" x="259" y="67" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="JgD-ge-hyo"/>
+                        <constraint firstAttribute="height" constant="80" id="L3p-XR-OTt"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wk0-3f-UqK">
+                    <rect key="frame" x="245" y="162" width="109" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109" id="21i-rC-E76"/>
+                        <constraint firstAttribute="width" constant="109" id="KS4-6X-jey"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Vak-5H-VxC"/>
+                        <constraint firstAttribute="height" constant="44" id="fWo-cq-0cq"/>
+                    </constraints>
+                    <state key="normal" title="点击登陆">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="LBY-NA-ccS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PaW-Wq-QMt" firstAttribute="centerX" secondItem="40R-dY-Kbj" secondAttribute="centerX" constant="-1" id="74W-aZ-ar5"/>
+                <constraint firstItem="Wk0-3f-UqK" firstAttribute="top" secondItem="PaW-Wq-QMt" secondAttribute="bottom" constant="15" id="Emb-kP-mpr"/>
+                <constraint firstItem="40R-dY-Kbj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MIu-G0-WJw"/>
+                <constraint firstAttribute="bottom" secondItem="40R-dY-Kbj" secondAttribute="bottom" id="OS0-YL-kNU"/>
+                <constraint firstItem="Wk0-3f-UqK" firstAttribute="top" secondItem="PaW-Wq-QMt" secondAttribute="bottom" constant="15" id="aNw-nE-ZPM"/>
+                <constraint firstItem="Wk0-3f-UqK" firstAttribute="centerX" secondItem="40R-dY-Kbj" secondAttribute="centerX" id="bUF-Aw-V3o"/>
+                <constraint firstItem="40R-dY-Kbj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="elh-3M-vQp"/>
+                <constraint firstAttribute="trailing" secondItem="40R-dY-Kbj" secondAttribute="trailing" id="ijs-Ht-d6w"/>
+                <constraint firstItem="40R-dY-Kbj" firstAttribute="top" secondItem="PaW-Wq-QMt" secondAttribute="bottom" constant="-147" id="lJY-CU-C3B"/>
+                <constraint firstItem="PaW-Wq-QMt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="wqM-jq-zur"/>
+                <constraint firstItem="PaW-Wq-QMt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="z2J-09-8m1"/>
+            </constraints>
+            <point key="canvasLocation" x="158" y="288"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fa41c804d7a9c732d760c3209d7f47eb.jpg" width="360" height="640"/>
+        <image name="profle.png" width="128" height="128"/>
+    </resources>
+</document>
